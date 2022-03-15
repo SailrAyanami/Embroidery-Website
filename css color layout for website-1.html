@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+    .grid {
+       display: grid; 
+    
+       grid-template-rows: 10fr 10fr 10fr 10fr 1fr;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+       
+       gap: 0px;
+       height: 100%;
+       
+    }
+      
+    #item-0 {
+    
+       background-color: #be786f; 
+       grid-row-start: 1;
+       grid-column-start: 1;
+    
+       grid-row-end: 2;
+       grid-column-end: 2;
+       
+    }
+    #item-1 {
+    
+       background-color: #de9e45; 
+       grid-row-start: 2;
+       grid-column-start: 1;
+    
+       grid-row-end: 5;
+       grid-column-end: 2;
+       
+    }
+    #item-2 {
+    
+       background-color: #6da277; 
+       grid-row-start: 1;
+       grid-column-start: 2;
+    
+       grid-row-end: 2;
+       grid-column-end: 5;
+       
+    }
+    #item-3 {
+    
+       background-color: #bd798e; 
+       grid-row-start: 2;
+       grid-column-start: 3;
+    
+       grid-row-end: 4;
+       grid-column-end: 5;
+       
+    }
+    #item-4 {
+    
+       background-color: #349aa2; 
+       grid-row-start: 2;
+       grid-column-start: 2;
+    
+       grid-row-end: 3;
+       grid-column-end: 3;
+       
+    }
+    #item-5 {
+    
+       background-color: #C7A65D; 
+       grid-row-start: 4;
+       grid-column-start: 3;
+    
+       grid-row-end: 5;
+       grid-column-end: 4;
+       
+    }
+    #item-6 {
+    
+       background-color: #5fcb5f; 
+       grid-row-start: 4;
+       grid-column-start: 4;
+    
+       grid-row-end: 5;
+       grid-column-end: 5;
+       
+    }
+    #item-7 {
+    
+       background-color: #e7df5d; 
+       grid-row-start: 3;
+       grid-column-start: 2;
+    
+       grid-row-end: 4;
+       grid-column-end: 3;
+       
+    }
+    #item-8 {
+    
+       background-color: #9ebdd5; 
+       grid-row-start: 4;
+       grid-column-start: 2;
+    
+       grid-row-end: 5;
+       grid-column-end: 3;
+       
+    }
+    #item-9 {
+    
+       background-color: #629368; 
+       grid-row-start: 5;
+       grid-column-start: 1;
+    
+       grid-row-end: 6;
+       grid-column-end: 5;
+       
+    }
+    .angry-grid {
+  display: grid;
+  grid-template-rows: 4rem auto 45px;
+  grid-template-columns: 16rem auto;
+
+  grid-template-areas:
+   'logo header'
+   'sidebar main-content'
+   'sidebar footer';
+ }
+
+@media (max-width: 767px){
+ .angry-grid {
+  grid-template-rows: 4rem auto auto 45px;
+  grid-template-columns: 16rem auto;
+
+  grid-template-areas:
+   'logo header'
+   'sidebar sidebar'
+   'main-content main-content';
+ }
+
+    </style>
+</head>
+    
+    <div class="grid">
+      <div id="item-0">&nbsp;</div>
+    
+      <div id="item-1">&nbsp;</div>
+      <div id="item-2">&nbsp;</div>
+      <div id="item-3">&nbsp;</div>
+      <div id="item-4">&nbsp;</div>
+      <div id="item-5">&nbsp;</div>
+      <div id="item-6">&nbsp;</div>
+      <div id="item-7">&nbsp;</div>
+      <div id="item-8">&nbsp;</div>
+      <div id="item-9">&nbsp;</div>
+    </div>
+</html>
